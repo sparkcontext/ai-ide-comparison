@@ -225,8 +225,8 @@
 
 <header>
   <h1>AI IDE Comparison for Hong Kong Developers</h1>
-  <p class="subtitle">OpenCode &middot; Cursor &middot; VS Code + GitHub Copilot &middot; OpenAI Codex</p>
-  <span class="meta">Updated June 2026 &middot; Hong Kong focus</span>
+  <p class="subtitle">OpenCode &middot; Cursor &middot; VS Code + GitHub Copilot &middot; OpenAI Codex &middot; MiniMax Code (M3)</p>
+  <span class="meta">Updated June 2026 &middot; Hong Kong focus &middot; 5 tools compared</span>
 </header>
 
 <div class="alert">
@@ -270,6 +270,14 @@
     <p>OpenAI's agentic coding system spanning Codex CLI (Rust, open source), VS Code/Cursor extension, ChatGPT cloud delegation, and GitHub bot. Powered by GPT-5.x-Codex. Bundled with every paid ChatGPT plan ($20 Plus to $200 Pro). Strong sandboxed execution and async cloud agents.</p>
   </div>
 
+  <div class="tool-card">
+    <h3>MiniMax Code (M3)</h3>
+    <span class="badge good">HK-Listed</span>
+    <span class="badge good">Open Source</span>
+    <span class="badge neutral">IDE + Agent</span>
+    <p>MiniMax (HKEX: 00100) launched M3 in June 2026 &mdash; a 196B MoE model activating only 11B params per inference. MSA sparse attention gives 1M context at 1/20 the compute of traditional models. Beats GPT-5.5 on SWE-Bench Pro. Native multi-modal (image, video, desktop control). MiniMax Code is the companion IDE. HK-accessible with no geo-blocking.</p>
+  </div>
+
 </div>
 
 <h2>Hong Kong Availability &amp; Access (the deciding factor)</h2>
@@ -282,6 +290,7 @@
   <th>Cursor</th>
   <th>VS Code + Copilot</th>
   <th>OpenAI Codex</th>
+  <th>MiniMax Code (M3)</th>
 </tr>
 </thead>
 <tbody>
@@ -291,6 +300,7 @@
   <td class="yes">Yes, no friction</td>
   <td class="yes">Yes, no friction</td>
   <td class="yes">CLI installs fine</td>
+  <td class="yes">Yes, no friction</td>
 </tr>
 <tr>
   <td class="feature">Signup with HK IP</td>
@@ -298,6 +308,7 @@
   <td class="yes">Works (Cursor account)</td>
   <td class="partial">GitHub OK; new Copilot Pro signups paused since Apr 2026</td>
   <td class="no">ChatGPT signup blocked from HK</td>
+  <td class="yes">Native HK support (listed on HKEX)</td>
 </tr>
 <tr>
   <td class="feature">HK credit card accepted</td>
@@ -305,6 +316,7 @@
   <td class="partial">Often works, sometimes declined</td>
   <td class="partial">GitHub billing usually works</td>
   <td class="no">ChatGPT billing routinely declines HK cards</td>
+  <td class="yes">HK billing (HK-listed company)</td>
 </tr>
 <tr>
   <td class="feature">Claude access in HK</td>
@@ -312,6 +324,7 @@
   <td class="yes">Routed through Cursor backend (no direct HK IP check)</td>
   <td class="no">Claude geo-blocked from HK on Copilot</td>
   <td class="no">N/A (no Claude)</td>
+  <td class="partial">N/A (uses M3 model native)</td>
 </tr>
 <tr>
   <td class="feature">OpenAI/GPT access in HK</td>
@@ -319,6 +332,7 @@
   <td class="yes">Routed through Cursor backend</td>
   <td class="yes">GPT-5 works on Copilot Pro</td>
   <td class="no">Direct ChatGPT blocked; need workaround</td>
+  <td class="partial">N/A (uses M3 model native)</td>
 </tr>
 <tr>
   <td class="feature">Workable local/CN models</td>
@@ -326,6 +340,7 @@
   <td class="partial">Custom model endpoint supported</td>
   <td class="no">No local model support</td>
   <td class="no">OpenAI models only</td>
+  <td class="yes">M3 is open source; can run locally</td>
 </tr>
 <tr>
   <td class="feature">VPN required?</td>
@@ -333,6 +348,7 @@
   <td class="yes">Generally no</td>
   <td class="partial">Sometimes for Claude/sign-in</td>
   <td class="no">Effectively yes for signup and billing</td>
+  <td class="yes">No &mdash; fully accessible from HK</td>
 </tr>
 </tbody>
 </table>
@@ -351,21 +367,22 @@
   <th>Cursor</th>
   <th>VS Code + Copilot</th>
   <th>OpenAI Codex</th>
+  <th>MiniMax Code (M3)</th>
 </tr>
 </thead>
 <tbody>
-<tr><td class="feature">Interface</td><td>Terminal TUI / CLI</td><td>Full GUI IDE</td><td>Full GUI IDE</td><td>CLI + IDE plugin + Web</td></tr>
-<tr><td class="feature">Open source</td><td class="yes">Yes (MIT)</td><td class="no">No</td><td class="partial">VS Code yes / Copilot no</td><td class="partial">CLI yes / models no</td></tr>
-<tr><td class="feature">Model flexibility</td><td class="yes">75+ providers, BYOK</td><td class="partial">Built-in selection, custom endpoint</td><td class="partial">GPT, Claude*, Gemini, Haiku</td><td class="no">GPT-5.x only</td></tr>
-<tr><td class="feature">Inline / tab completion</td><td class="partial">Limited</td><td class="yes">Best-in-class</td><td class="yes">Excellent</td><td class="partial">Via IDE extension</td></tr>
-<tr><td class="feature">Agent mode</td><td class="yes">Plan + Build agents</td><td class="yes">Composer + Agents Window</td><td class="yes">Agent Mode GA</td><td class="yes">Strong sandboxed agent</td></tr>
-<tr><td class="feature">Parallel agents</td><td class="yes">Multi-session</td><td class="yes">Agents Window (3.0)</td><td class="partial">Cloud agent + local</td><td class="yes">Async cloud tasks</td></tr>
-<tr><td class="feature">Cloud / background agent</td><td class="partial">Via headless server</td><td class="yes">Cloud Agents</td><td class="yes">Copilot coding agent</td><td class="yes">ChatGPT cloud delegation</td></tr>
-<tr><td class="feature">MCP support</td><td class="yes">Yes</td><td class="yes">Yes (40-tool cap)</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
-<tr><td class="feature">LSP integration</td><td class="yes">Native</td><td class="yes">VS Code-based</td><td class="yes">VS Code-based</td><td class="partial">Via host IDE</td></tr>
-<tr><td class="feature">Local models (Ollama)</td><td class="yes">First-class</td><td class="partial">Custom endpoint</td><td class="no">No</td><td class="no">No</td></tr>
-<tr><td class="feature">Privacy / no code storage</td><td class="yes">Yes by default</td><td class="partial">Privacy Mode opt-in</td><td class="partial">Org-controlled</td><td class="partial">Enterprise data controls</td></tr>
-<tr><td class="feature">Best codebase context</td><td class="partial">Repository-level</td><td class="yes">@codebase, deep indexing</td><td class="yes">Workspace + GitHub context</td><td class="yes">1M+ token repo reading</td></tr>
+<tr><td class="feature">Interface</td><td>Terminal TUI / CLI</td><td>Full GUI IDE</td><td>Full GUI IDE</td><td>CLI + IDE plugin + Web</td><td>Web IDE + Local client</td></tr>
+<tr><td class="feature">Open source</td><td class="yes">Yes (MIT)</td><td class="no">No</td><td class="partial">VS Code yes / Copilot no</td><td class="partial">CLI yes / models no</td><td class="yes">Yes (model + tool)</td></tr>
+<tr><td class="feature">Model flexibility</td><td class="yes">75+ providers, BYOK</td><td class="partial">Built-in selection, custom endpoint</td><td class="partial">GPT, Claude*, Gemini, Haiku</td><td class="no">GPT-5.x only</td><td class="partial">M3 native; API open</td></tr>
+<tr><td class="feature">Inline / tab completion</td><td class="partial">Limited</td><td class="yes">Best-in-class</td><td class="yes">Excellent</td><td class="partial">Via IDE extension</td><td class="partial">IDE-level</td></tr>
+<tr><td class="feature">Agent mode</td><td class="yes">Plan + Build agents</td><td class="yes">Composer + Agents Window</td><td class="yes">Agent Mode GA</td><td class="yes">Strong sandboxed agent</td><td class="yes">M3 Agent-native design</td></tr>
+<tr><td class="feature">Parallel agents</td><td class="yes">Multi-session</td><td class="yes">Agents Window (3.0)</td><td class="partial">Cloud agent + local</td><td class="yes">Async cloud tasks</td><td class="partial">Via multi-session</td></tr>
+<tr><td class="feature">Cloud / background agent</td><td class="partial">Via headless server</td><td class="yes">Cloud Agents</td><td class="yes">Copilot coding agent</td><td class="yes">ChatGPT cloud delegation</td><td class="partial">API-based</td></tr>
+<tr><td class="feature">MCP support</td><td class="yes">Yes</td><td class="yes">Yes (40-tool cap)</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="no">No</td></tr>
+<tr><td class="feature">LSP integration</td><td class="yes">Native</td><td class="yes">VS Code-based</td><td class="yes">VS Code-based</td><td class="partial">Via host IDE</td><td class="partial">Built-in</td></tr>
+<tr><td class="feature">Local models (Ollama)</td><td class="yes">First-class</td><td class="partial">Custom endpoint</td><td class="no">No</td><td class="no">No</td><td class="yes">M3 open-source, self-hostable</td></tr>
+<tr><td class="feature">Privacy / no code storage</td><td class="yes">Yes by default</td><td class="partial">Privacy Mode opt-in</td><td class="partial">Org-controlled</td><td class="partial">Enterprise data controls</td><td class="partial">API-based; TBD</td></tr>
+<tr><td class="feature">Best codebase context</td><td class="partial">Repository-level</td><td class="yes">@codebase, deep indexing</td><td class="yes">Workspace + GitHub context</td><td class="yes">1M+ token repo reading</td><td class="yes">1M context (MSA architecture)</td></tr>
 </tbody>
 </table>
 <p style="font-size: 0.85rem; color: var(--text-dim);">*Claude on Copilot is geo-blocked from Hong Kong as of 2026.</p>
@@ -380,14 +397,15 @@
   <th>Cursor</th>
   <th>VS Code + Copilot</th>
   <th>OpenAI Codex</th>
+  <th>MiniMax Code (M3)</th>
 </tr>
 </thead>
 <tbody>
-<tr><td class="feature">Free</td><td>Tool free; pay model</td><td>Hobby (limited)</td><td>Copilot Free (limited)</td><td>None usable</td></tr>
-<tr><td class="feature">Entry paid</td><td>OpenCode Go $5 first month, then $10/mo</td><td>Pro $20/mo</td><td>Pro $10/mo</td><td>ChatGPT Plus $20/mo</td></tr>
-<tr><td class="feature">Power user</td><td>Zen pay-as-you-go</td><td>Pro+ $60 / Ultra $200</td><td>Pro+ ~ $40/mo</td><td>Pro $100 or $200</td></tr>
-<tr><td class="feature">Team</td><td>Enterprise (custom)</td><td>Teams $40/user</td><td>Business $19/user, Enterprise $39/user</td><td>Business + usage</td></tr>
-<tr><td class="feature">Billing model</td><td>Mostly API metered (your provider)</td><td>Credit pool (mid-2025 change)</td><td>Moving to AI Credits (token-based, Jun 2026)</td><td>Token-based since Apr 2026</td></tr>
+<tr><td class="feature">Free</td><td>Tool free; pay model</td><td>Hobby (limited)</td><td>Copilot Free (limited)</td><td>None usable</td><td>Free tier available</td></tr>
+<tr><td class="feature">Entry paid</td><td>OpenCode Go $5 first month, then $10/mo</td><td>Pro $20/mo</td><td>Pro $10/mo</td><td>ChatGPT Plus $20/mo</td><td>~$10/mo (estimated)</td></tr>
+<tr><td class="feature">Power user</td><td>Zen pay-as-you-go</td><td>Pro+ $60 / Ultra $200</td><td>Pro+ ~ $40/mo</td><td>Pro $100 or $200</td><td>API pay-per-token</td></tr>
+<tr><td class="feature">Team</td><td>Enterprise (custom)</td><td>Teams $40/user</td><td>Business $19/user, Enterprise $39/user</td><td>Business + usage</td><td>Enterprise (custom)</td></tr>
+<tr><td class="feature">Billing model</td><td>Mostly API metered (your provider)</td><td>Credit pool (mid-2025 change)</td><td>Moving to AI Credits (token-based, Jun 2026)</td><td>Token-based since Apr 2026</td><td>Token / API metered</td></tr>
 </tbody>
 </table>
 
@@ -486,6 +504,32 @@
   </div>
 </div>
 
+<h3>MiniMax Code (M3)</h3>
+<div class="pros-cons">
+  <div class="pros">
+    <h4>Pros for HK</h4>
+    <ul>
+      <li>HK-listed company (HKEX: 00100) &mdash; native HK billing and support</li>
+      <li>Zero geo-blocking from HK</li>
+      <li>M3 model beats GPT-5.5 on SWE-Bench Pro (coding benchmark)</li>
+      <li>1M context window via MSA sparse attention (20x more efficient)</li>
+      <li>Fully open source &mdash; model and tool</li>
+      <li>Multi-modal: image, video, desktop control</li>
+      <li>196B MoE model, only 11B activated per inference &mdash; efficient</li>
+    </ul>
+  </div>
+  <div class="cons">
+    <h4>Cons</h4>
+    <ul>
+      <li>Very new (June 2026) &mdash; ecosystem still developing</li>
+      <li>No MCP support yet</li>
+      <li>Smaller plugin/extension ecosystem vs VS Code-based tools</li>
+      <li>Pricing still evolving post-IPO</li>
+      <li>Long-term model roadmap uncertain (just launched)</li>
+    </ul>
+  </div>
+</div>
+
 <h2>Which One Should You Pick?</h2>
 
 <div class="decision-tree">
@@ -505,11 +549,14 @@
   <p class="question">5. Privacy-sensitive code that should never leave your machine?</p>
   <p class="answer">&rarr; <strong>OpenCode + Ollama</strong> with Qwen 2.5 Coder 32B or DeepSeek-Coder-V2 16B locally. The only fully air-gapped option in this list.</p>
 
+  <p class="question">6. Do you want a native HK tool with no geo-blocking, US-vendor lock-in, or payment friction, and you care about cutting-edge model quality?</p>
+  <p class="answer">&rarr; <strong>MiniMax Code (M3)</strong>. It's a Hong Kong-listed company, so billing and access just work. M3 hits top-tier coding benchmarks (beats GPT-5.5 on SWE-Bench Pro), is fully open source, and the 1M context + desktop-agent capability make it a serious contender from day one. Still early, but the HK-native advantage is unique.</p>
+
 </div>
 
 <div class="verdict">
   <strong>Bottom line for a Hong Kong developer in 2026:</strong>
-  <p style="margin-top: 10px;">Use <strong>Cursor</strong> as your daily IDE because its backend routing solves most of the geo-block problem out of the box. Keep <strong>OpenCode</strong> installed as a terminal companion for tasks where you want to use DeepSeek/Qwen cheaply, run something locally via Ollama, or just script automation through the headless server. Add <strong>GitHub Copilot</strong> if your team already lives on GitHub, but don't count on Claude through it. Avoid making <strong>OpenAI Codex</strong> your primary tool unless you already have a working ChatGPT Plus/Pro account &mdash; the friction-to-value ratio is bad from HK.</p>
+  <p style="margin-top: 10px;">Use <strong>Cursor</strong> as your daily IDE because its backend routing solves most of the geo-block problem out of the box. Keep <strong>OpenCode</strong> installed as a terminal companion for tasks where you want to use DeepSeek/Qwen cheaply, run something locally via Ollama, or just script automation through the headless server. Add <strong>GitHub Copilot</strong> if your team already lives on GitHub, but don't count on Claude through it. Watch <strong>MiniMax Code (M3)</strong> closely &mdash; it's the strongest HK-native option with top-tier benchmarks and zero regional friction; if the ecosystem matures quickly it could become the default choice. Avoid making <strong>OpenAI Codex</strong> your primary tool unless you already have a working ChatGPT Plus/Pro account &mdash; the friction-to-value ratio is bad from HK.</p>
 </div>
 
 <h2>Practical Tips for Hong Kong Setup</h2>
@@ -520,12 +567,13 @@
   <li><strong>Free or near-free path:</strong> OpenCode + DeepSeek API (~$0.14/M tokens) or local Ollama with Qwen2.5-Coder. Surprisingly capable for daily work.</li>
   <li><strong>Enterprise path:</strong> Microsoft 365 Copilot / Azure OpenAI is the most compliance-friendly option in HK and the route many local banks have settled on after the recent Goldman/Anthropic news.</li>
   <li><strong>Don't pay twice:</strong> If you have ChatGPT Plus or GitHub Copilot, OpenCode can use those subscriptions directly &mdash; you don't need a separate API key.</li>
+  <li><strong>MiniMax M3 for HK-native AI:</strong> Since MiniMax is listed on HKEX (00100), M3 has no regional restrictions. Access via <em>MiniMax Code</em> at agent.minimaxi.com or call the API directly. The model is open source on HuggingFace if you want to self-host.</li>
 </ul>
 
 <footer>
   Sources: ohaiknow, ComputingForGeeks, Cursor changelog, GitHub Copilot blog, OpenAI Codex docs,
   Anthropic supported-countries list, Hong Kong AI Podcast, Bloomberg/Reuters (Goldman x Anthropic, Apr 2026),
-  Codersera, SitePoint AI tools comparison 2026.<br>
+  Codersera, SitePoint AI tools comparison 2026, MiniMax M3 launch materials (Jun 2026).<br>
   Compiled June 2026. Verify pricing and regional policies before committing &mdash; this space moves weekly.
 </footer>
 
